@@ -1,0 +1,158 @@
+body{
+    height:100%;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+nav{
+    margin: 0;
+    padding: 0 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(142, 87, 194, 0.795);
+    position: sticky;
+    align-items: center;
+    top: 0px;
+}
+
+.logo{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: rgb(241, 232, 232);
+}
+
+span{
+    color: rgb(141, 14, 130);
+}
+
+.sign-out{
+    text-decoration: none;
+    color: rgb(241, 232, 232);
+    justify-content: 50%;
+    padding: 0.8em 1.5em;
+    border-radius: 4em;
+
+    transition: 300ms ease-in;
+}
+
+.sign-out:hover{
+    background-color: rgb(141, 14, 130);
+}
+
+.hero-section{
+    padding-left: 4em;
+    margin: 0;
+}
+
+h1{
+    margin-top: 0.5em;
+    margin-bottom: 0.1em;
+    font-weight: bold;
+    font-size: 5em;
+    font-family: sans-serif;
+    color: rgb(141, 14, 130);
+    text-decoration: none;
+}
+
+p{
+    margin-top: 0.1em;
+    position: relative;
+    top: 0; 
+    font-size: 1.5em;
+    color: black;
+}
+
+.cards-container{
+    
+    margin: auto;
+    padding: 1em 4em;
+    align-items: center;  
+    height: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+}
+
+h4{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.button{
+    height: 8em;
+    width: 6em;
+    margin: 1em;
+    padding: 2em;
+    text-decoration: none;
+    border: transparent;
+    border-radius: 4em;
+    background: linear-gradient(45deg, rgba(196, 60, 184, 0.541)50%, rgba(99, 123, 197, 0.616)50%);
+    background-position: 100%;
+    background-size: 400%;
+    
+    transition: 0.5s ease-in-out;
+}
+
+.button:hover{
+    background-position: 0;
+    transform:scale(115%);
+}
+
+.whole-wrapper{
+    background-color: rgba(223, 213, 223, 0.61);
+    min-height: 100vh;
+    position: absolute;
+    background-position: bottom;
+    position: sticky;
+    top: 0px;
+}
+
+@media only screen and (max-width: 680px){
+
+    .logo{
+        font-size: 0.8em;
+    }
+
+    .sign-out{
+        font-size: 0.8em;
+    }
+
+    .hero-section{
+        padding-right: 1.5em;
+    }
+
+    h1{
+        margin-top: 1.5em;
+        font-size: 2.8em;
+    }
+
+    p{
+        font-size: 1.2em;
+    }
+
+
+    .button{
+        height: 6em;
+        width: 20em;
+
+    }
+
+
+}

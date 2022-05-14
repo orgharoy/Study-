@@ -1,0 +1,103 @@
+body{
+    height:100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+nav{
+    margin: 0;
+    padding: 0 4em;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(142, 87, 194, 0.795);
+    position: sticky;
+    align-items: center;
+    top: 0px;
+}
+
+.logo{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: rgb(241, 232, 232);
+}
+
+span{
+    color: rgb(141, 14, 130);
+}
+
+.sign-out{
+    text-decoration: none;
+    color: rgb(241, 232, 232);
+    justify-content: 50%;
+    padding: 0.8em 1.5em;
+    border-radius: 4em;
+
+    transition: 300ms ease-in;
+}
+
+.sign-out:hover{
+    background-color: rgb(141, 14, 130);
+}
+
+.hero-section{
+    padding-left: 4em;
+    margin: 0;
+}
+
+h1{
+    margin-top: 3em;
+    font-weight: bold;
+    font-size: 3em;
+    font-family: sans-serif;
+    color: rgb(141, 14, 130);
+    text-decoration: none;
+
+
+}
+
+p{
+    margin-top: 0.1em;
+    position: relative;
+    top: 0; 
+    font-size: 1.5em;
+    color: black;
+}
+
+.whole-wrapper{
+    background-color: rgba(223, 213, 223, 0.61);
+    height: 100vh;
+}
+
+@media only screen and (max-width: 680px){
+    .logo{
+        font-size: 0.8em;
+    }
+
+    .sign-out{
+        font-size: 0.8em;
+    }
+    .hero-section{
+        padding-right: 1.5em;
+    }
+
+    h1{
+        font-size: 2.5em;
+    }
+
+    p{
+        font-size: 1.2em;
+    }
+
+    .whole-wrapper{
+        background-color: transparent;
+        height: 100vh;
+    }
+
+}
